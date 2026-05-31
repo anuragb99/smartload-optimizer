@@ -9,7 +9,7 @@ REST API that selects the optimal combination of freight orders for a truck, max
 ## How to run
 
 ```bash
-git clone <your-repo>
+git clone https://github.com/anuragb99/smartload-optimizer.git
 cd smartload-optimizer
 docker compose up --build
 # Service available at http://localhost:8080
