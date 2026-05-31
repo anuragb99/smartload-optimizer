@@ -57,7 +57,7 @@ curl -X POST http://localhost:8080/api/v1/load-optimizer/optimize \
 |--------|---------|
 | 200    | Optimal combination found (may be empty if no feasible set exists) |
 | 400    | Invalid input — see `details[]` in the response body |
-| 413    | Payload exceeds 50 KB limit |
+| 413    | Payload exceeds limit |
 | 500    | Unexpected server error |
 
 ---
@@ -83,7 +83,7 @@ Money is stored entirely in integer cents (`long`) — no floating-point arithme
 src/main/java/com/smartload/optimizer/
 ├── controller/         LoadOptimizerController   — REST layer
 ├── service/            LoadOptimizerService      — orchestration
-├── algorithm/          LoadOptimizer (interface)
+|                       LoadOptimizer (interface)
 │                       BitmaskDPOptimizer        — core DP
 ├── model/              OptimizationResult        — internal
 │   └── dto/            OptimizeRequest/Response, TruckDto, OrderDto, ErrorResponse
