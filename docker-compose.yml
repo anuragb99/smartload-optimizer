@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  smartload-optimizer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smartload-optimizer:latest
+    container_name: smartload-optimizer
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_OPTS=-Xms128m -Xmx512m -XX:+UseZGC
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/actuator/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped

@@ -1,0 +1,42 @@
+{
+  "truck": {
+    "id": "truck-greedy",
+    "max_weight_lbs": 10,
+    "max_volume_cuft": 10
+  },
+  "orders": [
+    {
+      "id": "ord-big",
+      "payout_cents": 3000,
+      "weight_lbs": 6,
+      "volume_cuft": 6,
+      "origin": "Los Angeles, CA",
+      "destination": "Dallas, TX",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-10",
+      "is_hazmat": false
+    },
+    {
+      "id": "ord-small-a",
+      "payout_cents": 2000,
+      "weight_lbs": 5,
+      "volume_cuft": 5,
+      "origin": "Los Angeles, CA",
+      "destination": "Dallas, TX",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-10",
+      "is_hazmat": false
+    },
+    {
+      "id": "ord-small-b",
+      "payout_cents": 2000,
+      "weight_lbs": 5,
+      "volume_cuft": 5,
+      "origin": "Los Angeles, CA",
+      "destination": "Dallas, TX",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-10",
+      "is_hazmat": false
+    }
+  ]
+}

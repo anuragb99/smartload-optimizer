@@ -1,0 +1,42 @@
+{
+  "truck": {
+    "id": "truck-volume",
+    "max_weight_lbs": 100000,
+    "max_volume_cuft": 100
+  },
+  "orders": [
+    {
+      "id": "vol-heavy",
+      "payout_cents": 5000,
+      "weight_lbs": 1,
+      "volume_cuft": 60,
+      "origin": "A",
+      "destination": "B",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-05",
+      "is_hazmat": false
+    },
+    {
+      "id": "vol-light-a",
+      "payout_cents": 4000,
+      "weight_lbs": 1,
+      "volume_cuft": 50,
+      "origin": "A",
+      "destination": "B",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-05",
+      "is_hazmat": false
+    },
+    {
+      "id": "vol-light-b",
+      "payout_cents": 4000,
+      "weight_lbs": 1,
+      "volume_cuft": 50,
+      "origin": "A",
+      "destination": "B",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-05",
+      "is_hazmat": false
+    }
+  ]
+}

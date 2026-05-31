@@ -1,0 +1,53 @@
+{
+  "truck": {
+    "id": "truck-lanes",
+    "max_weight_lbs": 44000,
+    "max_volume_cuft": 3000
+  },
+  "orders": [
+    {
+      "id": "dal-1",
+      "payout_cents": 100000,
+      "weight_lbs": 20000,
+      "volume_cuft": 1000,
+      "origin": "Los Angeles, CA",
+      "destination": "Dallas, TX",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-10",
+      "is_hazmat": false
+    },
+    {
+      "id": "dal-2",
+      "payout_cents": 90000,
+      "weight_lbs": 20000,
+      "volume_cuft": 1000,
+      "origin": "Los Angeles, CA",
+      "destination": "Dallas, TX",
+      "pickup_date": "2025-12-02",
+      "delivery_date": "2025-12-11",
+      "is_hazmat": false
+    },
+    {
+      "id": "chi-1",
+      "payout_cents": 250000,
+      "weight_lbs": 25000,
+      "volume_cuft": 1500,
+      "origin": "Los Angeles, CA",
+      "destination": "Chicago, IL",
+      "pickup_date": "2025-12-01",
+      "delivery_date": "2025-12-10",
+      "is_hazmat": false
+    },
+    {
+      "id": "chi-2",
+      "payout_cents": 240000,
+      "weight_lbs": 25000,
+      "volume_cuft": 1500,
+      "origin": "Los Angeles, CA",
+      "destination": "Chicago, IL",
+      "pickup_date": "2025-12-02",
+      "delivery_date": "2025-12-11",
+      "is_hazmat": false
+    }
+  ]
+}
